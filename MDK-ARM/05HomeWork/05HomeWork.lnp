@@ -1,0 +1,26 @@
+--cpu Cortex-M0
+"05homework\startup_stm32f042x6.o"
+"05homework\main.o"
+"05homework\stm32f0xx_it.o"
+"05homework\stm32f0xx_hal_msp.o"
+"05homework\stm32f0xx_hal_tim.o"
+"05homework\stm32f0xx_hal_tim_ex.o"
+"05homework\stm32f0xx_hal_uart.o"
+"05homework\stm32f0xx_hal_uart_ex.o"
+"05homework\stm32f0xx_hal_rcc.o"
+"05homework\stm32f0xx_hal_rcc_ex.o"
+"05homework\stm32f0xx_hal.o"
+"05homework\stm32f0xx_hal_i2c.o"
+"05homework\stm32f0xx_hal_i2c_ex.o"
+"05homework\stm32f0xx_hal_gpio.o"
+"05homework\stm32f0xx_hal_dma.o"
+"05homework\stm32f0xx_hal_cortex.o"
+"05homework\stm32f0xx_hal_pwr.o"
+"05homework\stm32f0xx_hal_pwr_ex.o"
+"05homework\stm32f0xx_hal_flash.o"
+"05homework\stm32f0xx_hal_flash_ex.o"
+"05homework\system_stm32f0xx.o"
+--library_type=microlib --strict --scatter "05HomeWork\05HomeWork.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "05HomeWork.map" -o 05HomeWork\05HomeWork.axf
